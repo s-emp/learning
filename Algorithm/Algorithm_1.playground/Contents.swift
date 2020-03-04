@@ -49,4 +49,32 @@ test3.removeAll { (перс) -> Bool in
     перс == 7
 }
 print(test3)
+test3.forEach { (persone) in
+    print(persone)
+}
+test3.removeAll { (persone) -> Bool in
+    persone % 2 == 1
+    
+}
+print(test3)
+var tuple = (level: 10,васек: "челубас")
+print(tuple)
+print(tuple.1)
+print(tuple.0)
+print(tuple.васек)
+var 😌 = "chelubas"
+print(😌)
+
+// последовательности и коллекции
+var intVar = 12
+// полуоткрытые диапозоны
+var myRange = 1..<500
+print(myRange)
+let rangeint = 1..<5
+var someRangeInt = 1..<10
+print(someRangeInt)
+// 74-75 я не понимаю, почему он мне на перечисляет весь диапозон или это так неработает?
+var rangeString = "a"..<"z"
+type(of: rangeString)
+// префиксная форма оператора
 
