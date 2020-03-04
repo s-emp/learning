@@ -75,6 +75,24 @@ var someRangeInt = 1..<10
 print(someRangeInt)
 // 74-75 я не понимаю, почему он мне на перечисляет весь диапозон или это так неработает?
 var rangeString = "a"..<"z"
-type(of: rangeString)
+type (of: rangeString)
 // префиксная форма оператора
+someRangeInt.forEach { (серега) in
+    print(серега)
+}
+// для некст задания в Editor  надо выбрать Show randered markup
+var sSet: Set<Int> = [1,5,7,9]
+var mSet = [1,5,7,9]
+sSet.isDisjoint(with: mSet)
+var test = [Int.random(in: 1...100),Int.random(in: 1...100),Int.random(in: 1...100),Int.random(in: 1...100),Int.random(in: 1...100)]
+print(test)
+test.sort(by: <)
+print(test)
+var mtest1 = [1,2,3,4,5]
+var mtest2 = [6,7,8,9,0]
+mtest1 + mtest2
+mtest1 += mtest2
+print(mtest1)
+// три подьеба от сереги
+mtest1.count
 
